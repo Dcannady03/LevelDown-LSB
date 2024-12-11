@@ -1102,9 +1102,10 @@ local EGtrade =
                player:printToPlayer('This is not a valid word!.', 0, 'General')
                return
             else
+               player:tradeComplete()
                player:addItem(eggreward, 1, eggrewardaug, eggrewardaugmax)
                player:printToPlayer(string.format('Congratulations, you have obtained %s!.',GetItemByID(eggreward):getName()), 0, 'General')
-               player:tradeComplete()
+
             end
         end,
 

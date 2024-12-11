@@ -11,6 +11,7 @@
 -- Recast Time: 5 seconds
 -- Combos: Magic Attack Bonus
 -----------------------------------
+---@type TSpell
 local spellObject = {}
 
 spellObject.onMagicCastingCheck = function(caster, target, spell)
@@ -25,8 +26,9 @@ spellObject.onSpellCast = function(caster, target, spell)
     params.damageType = xi.damageType.WIND
     params.attribute = xi.mod.VIT
     params.attribute = xi.mod.STR
-    params.multiplier = 1.36
-    params.duppercap = 99
+    params.multiplier = 1.63
+    params.tMultiplier = 1.5
+    params.duppercap = 69
     params.str_wsc = 0.1
     params.dex_wsc = 0.0
     params.vit_wsc = 0.1
@@ -35,13 +37,13 @@ spellObject.onSpellCast = function(caster, target, spell)
     params.mnd_wsc = 0.0
     params.chr_wsc = 0.0
 
-    params.addedEffect = xi.effect.GRAVITY
+    params.addedEffect = xi.effect.WEIGHT
     local power = 5
-    local tick = 0
+    local tick = 3
     local duration = 90
 
     local damage = xi.spells.blue.useMagicalSpell(caster, target, spell, params)
-    xi.spells.blue.useMagicalSpellAddedeffect(caster, target, spell, params, power, tick, duration)
+    xi.spells.blue.useMagicalSpellAddedEffect(caster, target, spell, params, power, tick, duration)
 
     return damage
 end

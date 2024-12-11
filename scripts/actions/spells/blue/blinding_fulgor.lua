@@ -25,8 +25,9 @@ spellObject.onSpellCast = function(caster, target, spell)
     params.attribute = xi.mod.STR
     params.attribute = xi.mod.DEX
     params.attribute= xi.mod.AGI
-    params.multiplier = 1.36
-    params.duppercap = 99
+    params.multiplier = .75
+    params.tMultiplier = 1.0
+    params.duppercap = 75
     params.str_wsc = 0.3
     params.dex_wsc = 0.3
     params.vit_wsc = 0.0
@@ -36,11 +37,11 @@ spellObject.onSpellCast = function(caster, target, spell)
     params.chr_wsc = 0.0
 
     params.addedEffect = xi.effect.FLASH
-    local power = 5
+    local power = 1
     local tick = 0
-
+    local duration = 30
     local damage = xi.spells.blue.useMagicalSpell(caster, target, spell, params)
-    xi.spells.blue.useMagicalSpellAddedeffect(caster, target, spell, params, power, tick)
+    xi.spells.blue.useMagicalSpellAddedEffect(caster, target, spell, params, power, tick, duration)
 
     return damage
 end

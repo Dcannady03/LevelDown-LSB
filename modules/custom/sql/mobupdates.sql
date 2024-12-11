@@ -5,6 +5,10 @@ UPDATE mob_groups SET minLevel = minLevel + 40, maxLevel = maxLevel +45 WHERE zo
 UPDATE mob_groups SET spawntype = 0, respawntime = 5400 WHERE zoneid IN (39,40,41,42,119,134,135,185,186,187,188) AND spawntype = 32;
 --                      LoO
 UPDATE mob_groups SET spawntype = 0, respawntime = 600, HP = 78000, minLevel = 110, maxLevel = 110 WHERE name = 'Lord_of_Onzozo' AND spawntype = 32;
+--                     Mysticmaker Profblix
+UPDATE mob_groups SET spawntype = 0, respawntime = 600, HP = 78000, minLevel = 110, maxLevel = 110 WHERE name = 'Mysticmaker_Profblix' AND spawntype = 128;
+--                    Morbolger 
+UPDATE mob_groups SET spawntype = 0, respawntime = 3600, HP = 78000, minLevel = 110, maxLevel = 110 WHERE name = 'Morbolger' AND spawntype = 128;
 --						Mob Pools settings		
 UPDATE mob_pools SET aggro = 1 WHERE name = "Apex_Eft";
 UPDATE mob_pools SET aggro = 1 WHERE name = "Apex_Toad";
@@ -18,6 +22,11 @@ UPDATE mob_pools SET aggro = 1 WHERE name = "Locus_Wivre";
 UPDATE mob_pools SET links = 1 WHERE name = "Locus_Wivre";
 UPDATE mob_pools SET aggro = 1 WHERE name = "Locus_Colibri";
 UPDATE mob_pools SET aggro = 1 WHERE name = "Locus_Hypnos_Eft";
+UPDATE mob_pools SET aggro = 1 WHERE name = "Locus_Camelopard";
+UPDATE mob_pools SET aggro = 1 WHERE name = "Locus_Bight_Rarab";
+UPDATE mob_pools SET aggro = 1 WHERE name = "Locus_Armet_Beetle";
+UPDATE mob_pools SET links = 1 WHERE name = "Locus_Cutlass_Scorpion";
+UPDATE mob_pools SET links = 1 WHERE name = "Locus_Ghost_Crab";
 --						Mob Group settings	
 --							Zone 190			
 UPDATE mob_groups SET HP = 17000 WHERE name = "Locus_Spartoi_Sorcerer";
@@ -34,8 +43,23 @@ UPDATE mob_groups SET HP = 17000 WHERE name = "Locus_Camelopard";
 UPDATE mob_groups SET HP = 17000 WHERE name = "Locus_Hypnos_Eft";
 UPDATE mob_groups SET HP = 17000 WHERE name = "Locus_Ghost_Crab";
 --						Mob Family settings
-UPDATE mob_family_system SET mobradius = 1.0 WHERE familyID = 77;
+UPDATE mob_family_system SET mobradius = 3.0 WHERE familyID = 77;
 UPDATE mob_family_system SET mobradius = 3.0 WHERE familyID = 188;
+UPDATE mob_family_system SET detects = 3 WHERE familyID = 46;
+UPDATE mob_family_system SET detects = 3 WHERE familyID = 47;
+UPDATE mob_family_system SET detects = 3 WHERE familyID = 77;
+UPDATE mob_family_system SET detects = 3 WHERE familyID = 98;
+UPDATE mob_family_system SET detects = 3 WHERE familyID = 107;
+UPDATE mob_family_system SET detects = 3 WHERE familyID = 197;
+UPDATE mob_family_system SET detects = 3 WHERE familyID = 178;
+UPDATE mob_family_system SET detects = 3 WHERE familyID = 72;
+UPDATE mob_family_system SET detects = 3 WHERE familyID = 80;
+UPDATE mob_family_system SET detects = 3 WHERE familyID = 206;
+UPDATE mob_family_system SET detects = 3 WHERE familyID = 257;
+UPDATE mob_family_system SET detects = 3 WHERE familyID = 188;
+UPDATE mob_family_system SET detects = 3 WHERE familyID = 87;
+UPDATE mob_family_system SET detects = 3 WHERE familyID = 58;
+
 --                      Mob Respawn Time
 UPDATE mob_groups SET respawntime = 180 WHERE respawntime = 60; -- All
 UPDATE mob_groups SET respawntime = 180 WHERE respawntime = 300; -- All
@@ -534,6 +558,47 @@ UPDATE mob_groups SET HP = 145000, minLevel = 122, maxLevel = 122 WHERE name = '
 UPDATE mob_groups SET HP = 145000, minLevel = 122, maxLevel = 122 WHERE name = 'Ningishzida' AND zoneid = 254;
 UPDATE mob_groups SET HP = 145000, minLevel = 122, maxLevel = 122 WHERE name = 'Raja' AND zoneid = 254;
 UPDATE mob_groups SET HP = 145000, minLevel = 122, maxLevel = 122 WHERE name = 'Teugghia' AND zoneid = 254;
+--					Void Walker NM	Tier I    122 HP 145000
+UPDATE mob_groups SET HP = 145000, minLevel = 122, maxLevel = 122 WHERE name = 'Sunderclaw';
+UPDATE mob_groups SET HP = 145000, minLevel = 122, maxLevel = 122 WHERE name = 'Quagmire_Pugil';
+UPDATE mob_groups SET HP = 145000, minLevel = 122, maxLevel = 122 WHERE name = 'Globster';
+UPDATE mob_groups SET HP = 145000, minLevel = 122, maxLevel = 122 WHERE name = 'Ground_Guzzler';
+UPDATE mob_groups SET HP = 145000, minLevel = 122, maxLevel = 122 WHERE name = 'Raker_Bee';
+UPDATE mob_groups SET HP = 145000, minLevel = 122, maxLevel = 122 WHERE name = 'Rummager_Beetle';
+UPDATE mob_groups SET HP = 145000, minLevel = 122, maxLevel = 122 WHERE name = 'Aither';
+UPDATE mob_groups SET HP = 145000, minLevel = 122, maxLevel = 122 WHERE name = 'Deorc';
+UPDATE mob_groups SET HP = 145000, minLevel = 122, maxLevel = 122 WHERE name = 'Eorthe';
+UPDATE mob_groups SET HP = 145000, minLevel = 122, maxLevel = 122 WHERE name = 'Puretos';
+UPDATE mob_groups SET HP = 145000, minLevel = 122, maxLevel = 122 WHERE name = 'Pruina';
+UPDATE mob_groups SET HP = 145000, minLevel = 122, maxLevel = 122 WHERE name = 'Beorht';
+UPDATE mob_groups SET HP = 145000, minLevel = 122, maxLevel = 122 WHERE name = 'Thunor';
+UPDATE mob_groups SET HP = 145000, minLevel = 122, maxLevel = 122 WHERE name = 'Lacus';
+UPDATE mob_groups SET HP = 145000, minLevel = 122, maxLevel = 122 WHERE name = 'Gjenganger';
+UPDATE mob_groups SET HP = 145000, minLevel = 122, maxLevel = 122 WHERE name = 'Gorehound';
+UPDATE mob_groups SET HP = 145000, minLevel = 122, maxLevel = 122 WHERE name = 'Void_Hare';
+UPDATE mob_groups SET HP = 145000, minLevel = 122, maxLevel = 122 WHERE name = 'Prickly_Sheep';
+--					Void Walker NM	Tier II	  127 HP 185000
+UPDATE mob_groups SET HP = 185000, minLevel = 127, maxLevel = 127 WHERE name = 'Capricornus';
+UPDATE mob_groups SET HP = 185000, minLevel = 127, maxLevel = 127 WHERE name = 'Yacumama';
+UPDATE mob_groups SET HP = 185000, minLevel = 127, maxLevel = 127 WHERE name = 'Lamprey_Lord';
+UPDATE mob_groups SET HP = 185000, minLevel = 127, maxLevel = 127 WHERE name = 'Shoggoth';
+UPDATE mob_groups SET HP = 185000, minLevel = 127, maxLevel = 127 WHERE name = 'Jyeshtha';
+UPDATE mob_groups SET HP = 185000, minLevel = 127, maxLevel = 127 WHERE name = 'Farruca_Fly';
+UPDATE mob_groups SET HP = 185000, minLevel = 127, maxLevel = 127 WHERE name = 'Skuld';
+UPDATE mob_groups SET HP = 185000, minLevel = 127, maxLevel = 127 WHERE name = 'Urd';
+UPDATE mob_groups SET HP = 185000, minLevel = 127, maxLevel = 127 WHERE name = 'Erebus';
+UPDATE mob_groups SET HP = 185000, minLevel = 127, maxLevel = 127 WHERE name = 'Feuerunke';
+UPDATE mob_groups SET HP = 185000, minLevel = 127, maxLevel = 127 WHERE name = 'Chesma';
+UPDATE mob_groups SET HP = 185000, minLevel = 127, maxLevel = 127 WHERE name = 'Tammuz';
+--  				Void Walker NM	Tier III  135 HP 345000
+UPDATE mob_groups SET HP = 345000, minLevel = 135, maxLevel = 135 WHERE name = 'Krabkatoa';
+UPDATE mob_groups SET HP = 345000, minLevel = 135, maxLevel = 135 WHERE name = 'Blobdingnag';
+UPDATE mob_groups SET HP = 345000, minLevel = 135, maxLevel = 135 WHERE name = 'Orcus';
+UPDATE mob_groups SET HP = 345000, minLevel = 135, maxLevel = 135 WHERE name = 'Verthandi';
+UPDATE mob_groups SET HP = 345000, minLevel = 135, maxLevel = 135 WHERE name = 'Lord_Ruthven';
+UPDATE mob_groups SET HP = 345000, minLevel = 135, maxLevel = 135 WHERE name = 'Dawon';
+--  				Void Walker NM	Tier IV	  150 HP 545000
+UPDATE mob_groups SET HP = 545000, minLevel = 150, maxLevel = 150 WHERE name = 'Yilbegan';
 
 -- correct apex jagil mod skills
 UPDATE mob_pools SET skill_list_id = 197 WHERE name = 'Apex_Jagil' AND poolid = 5393;

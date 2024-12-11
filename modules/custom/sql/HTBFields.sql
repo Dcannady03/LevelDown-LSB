@@ -35,14 +35,14 @@ INSERT INTO `bcnm_records` VALUES (1157,67,'puppet_in_peril_ii'          ,'nobod
 
 -- assign Mobs into battle fields
 -- Garuda Prim HTBF updated
-INSERT INTO mob_spell_lists VALUES ('Garuda_Prime_HTBF', 506, 188, 65, 255); -- Aeroga V
-INSERT INTO mob_spell_lists VALUES ('Garuda_Prime_HTBF', 506, 209, 65, 255); -- Tornado 2
-INSERT INTO mob_spell_lists VALUES ('Garuda_Prime_HTBF', 506,  79, 65, 255); -- Slow II
-INSERT INTO mob_spell_lists VALUES ('Garuda_Prime_HTBF', 506,  80, 65, 255); -- Paralyze II
-INSERT INTO mob_spell_lists VALUES ('Garuda_Prime_HTBF', 506, 102, 65, 255); -- Enaero
-INSERT INTO mob_spell_lists VALUES ('Garuda_Prime_HTBF', 506, 157, 65, 255); -- Aero IV
-INSERT INTO mob_spell_lists VALUES ('Garuda_Prime_HTBF', 506, 158, 65, 255); -- Aero V
-INSERT INTO mob_pools VALUES (40000, 'Garuda_Prime_HTBF', 'Garuda_Prime', 324, 0x00001c0300000000000000000000000000000000, 1, 4, 6, 240, 100, 0, 1, 1, 1, 18, 1, 0, 0, 3, 0, 0, 506, 0, 0, 37, 37);  
+INSERT INTO mob_spell_lists VALUES ('Garuda_Prime_HTBF', 508, 188, 65, 255); -- Aeroga V
+INSERT INTO mob_spell_lists VALUES ('Garuda_Prime_HTBF', 508, 209, 65, 255); -- Tornado 2
+INSERT INTO mob_spell_lists VALUES ('Garuda_Prime_HTBF', 508,  79, 65, 255); -- Slow II
+INSERT INTO mob_spell_lists VALUES ('Garuda_Prime_HTBF', 508,  80, 65, 255); -- Paralyze II
+INSERT INTO mob_spell_lists VALUES ('Garuda_Prime_HTBF', 508, 102, 65, 255); -- Enaero
+INSERT INTO mob_spell_lists VALUES ('Garuda_Prime_HTBF', 508, 157, 65, 255); -- Aero IV
+INSERT INTO mob_spell_lists VALUES ('Garuda_Prime_HTBF', 508, 158, 65, 255); -- Aero V
+INSERT INTO mob_pools VALUES (40000, 'Garuda_Prime_HTBF', 'Garuda_Prime', 324, 0x00001c0300000000000000000000000000000000, 1, 4, 6, 240, 100, 0, 1, 1, 1, 18, 1, 0, 0, 3, 0, 0, 508, 0, 0, 37, 37);  
 UPDATE mob_spawn_points SET pos_X =  503.4111, pos_y =   41.6648, pos_z = -366.8300,  pos_rot = 106 WHERE mobid = 17600540;
 UPDATE mob_spawn_points SET pos_X =   24.1289, pos_y =  -18.3276, pos_z =   32.7717,  pos_rot = 101 WHERE mobid = 17600541;
 UPDATE mob_spawn_points SET pos_X = -375.3079, pos_y =  -78.4023, pos_z =  512.9899,  pos_rot =  97 WHERE mobid = 17600542;
@@ -60,14 +60,14 @@ INSERT INTO mob_droplist VALUES(3921,1,4,1000,8723,200); -- Beryllium Ore
 INSERT INTO mob_droplist VALUES(3921,1,4,1000,8725,200); -- Exalted Log
 INSERT INTO mob_droplist VALUES(3921,1,4,1000,8727,200); -- Sif's Lock
 -- Ramuh Prim HTBF updated
-INSERT INTO mob_spell_lists VALUES ('Ramuh_Prime_HTBF', 507, 198, 65, 255); -- Thundega V
-INSERT INTO mob_spell_lists VALUES ('Ramuh_Prime_HTBF', 507, 213, 65, 255); -- Burst 2
-INSERT INTO mob_spell_lists VALUES ('Ramuh_Prime_HTBF', 507,  79, 65, 255); -- Slow II
-INSERT INTO mob_spell_lists VALUES ('Ramuh_Prime_HTBF', 507,  80, 65, 255); -- Paralyze II
-INSERT INTO mob_spell_lists VALUES ('Ramuh_Prime_HTBF', 507, 104, 65, 255); -- Enthunder
+INSERT INTO mob_spell_lists VALUES ('Ramuh_Prime_HTBF', 509, 198, 65, 255); -- Thundega V
+INSERT INTO mob_spell_lists VALUES ('Ramuh_Prime_HTBF', 509, 213, 65, 255); -- Burst 2
+INSERT INTO mob_spell_lists VALUES ('Ramuh_Prime_HTBF', 509,  79, 65, 255); -- Slow II
+INSERT INTO mob_spell_lists VALUES ('Ramuh_Prime_HTBF', 509,  80, 65, 255); -- Paralyze II
+INSERT INTO mob_spell_lists VALUES ('Ramuh_Prime_HTBF', 509, 104, 65, 255); -- Enthunder
 --INSERT INTO mob_spell_lists VALUES ('Ramuh_Prime_HTBF', 507, 167, 65, 255); -- Thunder IV
-INSERT INTO mob_spell_lists VALUES ('Ramuh_Prime_HTBF', 507, 168, 65, 255); -- Thunder V
-INSERT INTO mob_pools VALUES (40001, 'Ramuh_Prime_HTBF', 'Ramuh_Prime', 320, 0x00001e0300000000000000000000000000000000, 1, 4, 12, 240, 100, 0, 1, 1, 1, 18, 0, 0, 0, 3, 0, 0, 507, 0, 0, 43, 43);  
+INSERT INTO mob_spell_lists VALUES ('Ramuh_Prime_HTBF', 509, 168, 65, 255); -- Thunder V
+INSERT INTO mob_pools VALUES (40001, 'Ramuh_Prime_HTBF', 'Ramuh_Prime', 320, 0x00001e0300000000000000000000000000000000, 1, 4, 12, 240, 100, 0, 1, 1, 1, 18, 0, 0, 0, 3, 0, 0, 509, 0, 0, 43, 43);  
 UPDATE mob_spawn_points SET pos_X =  504.0446, pos_y =   41.7271, pos_z = -367.8477,  pos_rot =  97 WHERE mobid = 17604639;
 UPDATE mob_spawn_points SET pos_X =   23.0873, pos_y =  -18.2112, pos_z =   31.6858,  pos_rot =  97 WHERE mobid = 17604640;
 UPDATE mob_spawn_points SET pos_X = -375.9910, pos_y =  -78.3179, pos_z =  512.7903,  pos_rot =  89 WHERE mobid = 17604641;
@@ -85,14 +85,14 @@ INSERT INTO mob_droplist VALUES(3923,1,4,1000,8723,200); -- Beryllium Ore
 INSERT INTO mob_droplist VALUES(3923,1,4,1000,8725,200); -- Exalted Log
 INSERT INTO mob_droplist VALUES(3923,1,4,1000,8727,200); -- Sif's Lock
 -- Shiva Prim HTBF updated
-INSERT INTO mob_spell_lists VALUES ('Shiva_Prime_HTBF', 508, 183, 65, 255); -- Blizzaga V
-INSERT INTO mob_spell_lists VALUES ('Shiva_Prime_HTBF', 508, 207, 65, 255); -- Freeze 2
-INSERT INTO mob_spell_lists VALUES ('Shiva_Prime_HTBF', 508,  79, 65, 255); -- Slow II
-INSERT INTO mob_spell_lists VALUES ('Shiva_Prime_HTBF', 508,  80, 65, 255); -- Paralyze II
-INSERT INTO mob_spell_lists VALUES ('Shiva_Prime_HTBF', 508, 101, 65, 255); -- Enblizzard
-INSERT INTO mob_spell_lists VALUES ('Shiva_Prime_HTBF', 508, 152, 65, 255); -- Blizzard IV
-INSERT INTO mob_spell_lists VALUES ('Shiva_Prime_HTBF', 508, 153, 65, 255); -- Blizzard V
-INSERT INTO mob_pools VALUES (40002, 'Shiva_Prime_HTBF', 'Shiva_Prime', 319, 0x00001d0300000000000000000000000000000000, 1, 4, 6, 240, 100, 0, 1, 1, 1, 18, 1, 0, 0, 3, 0, 0, 508, 0, 0, 44, 44);  
+INSERT INTO mob_spell_lists VALUES ('Shiva_Prime_HTBF', 510, 183, 65, 255); -- Blizzaga V
+INSERT INTO mob_spell_lists VALUES ('Shiva_Prime_HTBF', 510, 207, 65, 255); -- Freeze 2
+INSERT INTO mob_spell_lists VALUES ('Shiva_Prime_HTBF', 510,  79, 65, 255); -- Slow II
+INSERT INTO mob_spell_lists VALUES ('Shiva_Prime_HTBF', 510,  80, 65, 255); -- Paralyze II
+INSERT INTO mob_spell_lists VALUES ('Shiva_Prime_HTBF', 510, 101, 65, 255); -- Enblizzard
+INSERT INTO mob_spell_lists VALUES ('Shiva_Prime_HTBF', 510, 152, 65, 255); -- Blizzard IV
+INSERT INTO mob_spell_lists VALUES ('Shiva_Prime_HTBF', 510, 153, 65, 255); -- Blizzard V
+INSERT INTO mob_pools VALUES (40002, 'Shiva_Prime_HTBF', 'Shiva_Prime', 319, 0x00001d0300000000000000000000000000000000, 1, 4, 6, 240, 100, 0, 1, 1, 1, 18, 1, 0, 0, 3, 0, 0, 510, 0, 0, 44, 44);  
 UPDATE mob_spawn_points SET pos_X =  504.8676,  pos_y =  41.5439,  pos_z = -366.713,  pos_rot = 102 WHERE mobid = 17608747;
 UPDATE mob_spawn_points SET pos_X =   23.9380,  pos_y = -18.2799,  pos_z =  32.3346,  pos_rot = 102 WHERE mobid = 17608748;
 UPDATE mob_spawn_points SET pos_X = -374.1309,  pos_y = -78.5339,  pos_z = 512.5617,  pos_rot =  96 WHERE mobid = 17608749;
@@ -110,14 +110,14 @@ INSERT INTO mob_droplist VALUES(3922,1,4,1000,8723,200); -- Beryllium Ore
 INSERT INTO mob_droplist VALUES(3922,1,4,1000,8725,200); -- Exalted Log
 INSERT INTO mob_droplist VALUES(3922,1,4,1000,8727,200); -- Sif's Lock
 -- Leviathan Prim HTBF updated
-INSERT INTO mob_spell_lists VALUES ('Leviathan_Prime_HTBF', 509, 203, 65, 255); -- Waterga V
-INSERT INTO mob_spell_lists VALUES ('Leviathan_Prime_HTBF', 509, 215, 65, 255); -- Flood 2
-INSERT INTO mob_spell_lists VALUES ('Leviathan_Prime_HTBF', 509,  79, 65, 255); -- Slow II
-INSERT INTO mob_spell_lists VALUES ('Leviathan_Prime_HTBF', 509,  80, 65, 255); -- Paralyze II
-INSERT INTO mob_spell_lists VALUES ('Leviathan_Prime_HTBF', 509, 105, 65, 255); -- Enwater
-INSERT INTO mob_spell_lists VALUES ('Leviathan_Prime_HTBF', 509, 172, 65, 255); -- Water IV
-INSERT INTO mob_spell_lists VALUES ('Leviathan_Prime_HTBF', 509, 173, 65, 255); -- Water V
-INSERT INTO mob_pools VALUES (40003, 'Leviathan_Prime_HTBF', 'Leviathan_Prime', 323, 0x00001b0300000000000000000000000000000000, 1, 4, 8, 240, 100, 0, 1, 1, 1, 18, 1, 0, 0, 3, 0, 0, 509, 0, 0, 40, 40);  
+INSERT INTO mob_spell_lists VALUES ('Leviathan_Prime_HTBF', 511, 203, 65, 255); -- Waterga V
+INSERT INTO mob_spell_lists VALUES ('Leviathan_Prime_HTBF', 511, 215, 65, 255); -- Flood 2
+INSERT INTO mob_spell_lists VALUES ('Leviathan_Prime_HTBF', 511,  79, 65, 255); -- Slow II
+INSERT INTO mob_spell_lists VALUES ('Leviathan_Prime_HTBF', 511,  80, 65, 255); -- Paralyze II
+INSERT INTO mob_spell_lists VALUES ('Leviathan_Prime_HTBF', 511, 105, 65, 255); -- Enwater
+INSERT INTO mob_spell_lists VALUES ('Leviathan_Prime_HTBF', 511, 172, 65, 255); -- Water IV
+INSERT INTO mob_spell_lists VALUES ('Leviathan_Prime_HTBF', 511, 173, 65, 255); -- Water V
+INSERT INTO mob_pools VALUES (40003, 'Leviathan_Prime_HTBF', 'Leviathan_Prime', 323, 0x00001b0300000000000000000000000000000000, 1, 4, 8, 240, 100, 0, 1, 1, 1, 18, 1, 0, 0, 3, 0, 0, 511, 0, 0, 40, 40);  
 UPDATE mob_spawn_points SET pos_X =  505.3401, pos_y =   41.5271, pos_z = -367.2156,  pos_rot = 102 WHERE mobid = 17641497;
 UPDATE mob_spawn_points SET pos_X =   25.9310, pos_y =  -18.6385, pos_z =   33.1422,  pos_rot = 100 WHERE mobid = 17641498;
 UPDATE mob_spawn_points SET pos_X = -375.2288, pos_y =  -78.4145, pos_z =  513.0482,  pos_rot =  99 WHERE mobid = 17641499;
@@ -135,14 +135,14 @@ INSERT INTO mob_droplist VALUES(3920,1,4,1000,8723,200); -- Beryllium Ore
 INSERT INTO mob_droplist VALUES(3920,1,4,1000,8725,200); -- Exalted Log
 INSERT INTO mob_droplist VALUES(3920,1,4,1000,8727,200); -- Sif's Lock
 -- Ifrit Prim HTBF updated
-INSERT INTO mob_spell_lists VALUES ('Ifrit_Prime_HTBF', 510, 178, 65, 255); -- firaga V
-INSERT INTO mob_spell_lists VALUES ('Ifrit_Prime_HTBF', 510, 205, 65, 255); -- flare 2
-INSERT INTO mob_spell_lists VALUES ('Ifrit_Prime_HTBF', 510,  79, 65, 255); -- Slow II
-INSERT INTO mob_spell_lists VALUES ('Ifrit_Prime_HTBF', 510,  80, 65, 255); -- Paralyze II
-INSERT INTO mob_spell_lists VALUES ('Ifrit_Prime_HTBF', 510, 100, 65, 255); -- Enfire
-INSERT INTO mob_spell_lists VALUES ('Ifrit_Prime_HTBF', 510, 147, 65, 255); -- fire IV
-INSERT INTO mob_spell_lists VALUES ('Ifrit_Prime_HTBF', 510, 148, 65, 255); -- fire V
-INSERT INTO mob_pools VALUES (40004, 'Ifrit_Prime_HTBF', 'Ifrit_Prime', 322, 0x0000190300000000000000000000000000000000, 1, 4, 5, 240, 100, 0, 1, 1, 1, 18, 1, 0, 0, 3, 0, 0, 510, 0, 0, 38, 38);  
+INSERT INTO mob_spell_lists VALUES ('Ifrit_Prime_HTBF', 512, 178, 65, 255); -- firaga V
+INSERT INTO mob_spell_lists VALUES ('Ifrit_Prime_HTBF', 512, 205, 65, 255); -- flare 2
+INSERT INTO mob_spell_lists VALUES ('Ifrit_Prime_HTBF', 512,  79, 65, 255); -- Slow II
+INSERT INTO mob_spell_lists VALUES ('Ifrit_Prime_HTBF', 512,  80, 65, 255); -- Paralyze II
+INSERT INTO mob_spell_lists VALUES ('Ifrit_Prime_HTBF', 512, 100, 65, 255); -- Enfire
+INSERT INTO mob_spell_lists VALUES ('Ifrit_Prime_HTBF', 512, 147, 65, 255); -- fire IV
+INSERT INTO mob_spell_lists VALUES ('Ifrit_Prime_HTBF', 512, 148, 65, 255); -- fire V
+INSERT INTO mob_pools VALUES (40004, 'Ifrit_Prime_HTBF', 'Ifrit_Prime', 322, 0x0000190300000000000000000000000000000000, 1, 4, 5, 240, 100, 0, 1, 1, 1, 18, 1, 0, 0, 3, 0, 0, 512, 0, 0, 38, 38);  
 UPDATE mob_spawn_points SET pos_X =  503.4712, pos_y =   41.7094, pos_z = -367.2797,  pos_rot =  97 WHERE mobid = 17625113;
 UPDATE mob_spawn_points SET pos_X =   23.6167, pos_y =  -18.3472, pos_z =   33.1332,  pos_rot = 103 WHERE mobid = 17625114;
 UPDATE mob_spawn_points SET pos_X = -375.8824, pos_y =  -78.3193, pos_z =  512.7032,  pos_rot = 103 WHERE mobid = 17625115;
@@ -160,14 +160,14 @@ INSERT INTO mob_droplist VALUES(3924,1,4,1000,8723,200); -- Beryllium Ore
 INSERT INTO mob_droplist VALUES(3924,1,4,1000,8725,200); -- Exalted Log
 INSERT INTO mob_droplist VALUES(3924,1,4,1000,8727,200); -- Sif's Lock
 -- Titan Prim HTBF updated
-INSERT INTO mob_spell_lists VALUES ('Titan_Prime_HTBF', 511, 193, 65, 255); -- stonega V
-INSERT INTO mob_spell_lists VALUES ('Titan_Prime_HTBF', 511, 211, 65, 255); -- quake 2
-INSERT INTO mob_spell_lists VALUES ('Titan_Prime_HTBF', 511,  79, 65, 255); -- Slow II
-INSERT INTO mob_spell_lists VALUES ('Titan_Prime_HTBF', 511,  80, 65, 255); -- Paralyze II
-INSERT INTO mob_spell_lists VALUES ('Titan_Prime_HTBF', 511, 103, 65, 255); -- Enstone
-INSERT INTO mob_spell_lists VALUES ('Titan_Prime_HTBF', 511, 162, 65, 255); -- stone IV
-INSERT INTO mob_spell_lists VALUES ('Titan_Prime_HTBF', 511, 163, 65, 255); -- stone V
-INSERT INTO mob_pools VALUES (40005, 'Titan_Prime_HTBF', 'Titan_Prime', 321, 0x00001a0300000000000000000000000000000000, 4, 4, 6, 240, 100, 0, 1, 1, 1, 18, 1, 0, 0, 3, 0, 0, 511, 0, 0, 45, 45);  
+INSERT INTO mob_spell_lists VALUES ('Titan_Prime_HTBF', 513, 193, 65, 255); -- stonega V
+INSERT INTO mob_spell_lists VALUES ('Titan_Prime_HTBF', 513, 211, 65, 255); -- quake 2
+INSERT INTO mob_spell_lists VALUES ('Titan_Prime_HTBF', 513,  79, 65, 255); -- Slow II
+INSERT INTO mob_spell_lists VALUES ('Titan_Prime_HTBF', 513,  80, 65, 255); -- Paralyze II
+INSERT INTO mob_spell_lists VALUES ('Titan_Prime_HTBF', 513, 103, 65, 255); -- Enstone
+INSERT INTO mob_spell_lists VALUES ('Titan_Prime_HTBF', 513, 162, 65, 255); -- stone IV
+INSERT INTO mob_spell_lists VALUES ('Titan_Prime_HTBF', 513, 163, 65, 255); -- stone V
+INSERT INTO mob_pools VALUES (40005, 'Titan_Prime_HTBF', 'Titan_Prime', 321, 0x00001a0300000000000000000000000000000000, 4, 4, 6, 240, 100, 0, 1, 1, 1, 18, 1, 0, 0, 3, 0, 0, 513, 0, 0, 45, 45);  
 UPDATE mob_spawn_points SET pos_X =  503.7151, pos_y =   41.7203, pos_z = -367.5521,  pos_rot =  89 WHERE mobid = 17633308;
 UPDATE mob_spawn_points SET pos_X =   24.4596, pos_y =  -18.3895, pos_z =   33.1568,  pos_rot =  97 WHERE mobid = 17633309;
 UPDATE mob_spawn_points SET pos_X = -375.5651, pos_y =  -78.3770, pos_z =  513.0141,  pos_rot = 102 WHERE mobid = 17633310;

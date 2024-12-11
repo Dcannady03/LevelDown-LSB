@@ -1502,7 +1502,7 @@ page26 = -- Trusts page 2
     {
         'Cipher Of Arciela II',
          function(player)
-           player:setLocalVar('NMSTrust', 10184)
+           player:setLocalVar('NMSTrustSpell', 1017)
            menu.options = page36
             delaySendMenu(player)
          end
@@ -3504,7 +3504,7 @@ m:addOverride('xi.zones.Rabao.Zone.onInitialize', function(zone)
                            if remainder > 0 then
                               slotsNeeded = slotsNeeded + 1
                            end
-                                  if countx < quantity then
+                                  if countx <= quantity then
                                     if countx > 0 then
                                      if player:getFreeSlotsCount() < slotsNeeded then
                                         player:printToPlayer('You cannot withdrawn that amount. ', 0, 'Draider')

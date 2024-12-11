@@ -29,27 +29,26 @@ spellObject.onSpellCast = function(caster, target, spell)
     params.skillType = xi.skill.BLUE_MAGIC
     params.attribute = xi.mod.INT
     params.attribute = xi.mod.MND
-    params.multiplier = 1.5625
+    params.multiplier = 0.5
     params.tMultiplier = 1.0
-    params.duppercap = 99
+    params.duppercap = 75
     params.str_wsc = 0.0
     params.dex_wsc = 0.0
     params.vit_wsc = 0.0
     params.agi_wsc = 0.0
-    params.int_wsc = 2.5
-    params.mnd_wsc = 2.5
+    params.int_wsc = 0.3
+    params.mnd_wsc = 0.2
     params.chr_wsc = 0.0
     
     params.addedEffect = xi.effect.STUN
-    local power = 10
-    local tick = 0
+    local power = 5
+    local tick = 3
     local duration = 10
 
-    local damage = xi.spells.blue.useMagicalSpell(caster, target, spell, params, true)
+    local damage = xi.spells.blue.useMagicalSpell(caster, target, spell, params)
     xi.spells.blue.useMagicalSpellAddedEffect(caster, target, spell, params, power, tick, duration)
-    local resist = results[2]
 
-    return 
+    return damage
 end
 
 return spellObject

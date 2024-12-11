@@ -319,6 +319,14 @@ commandObj.onTrigger = function(player)
             15007,45000,  --
             16314,45000,  --
             15751,45000,  --
+            -- AF1
+            11991,35000, -- Wizard's Torque
+            17423,35000, -- Casting Wand
+            13856,45000, -- Wizard's Petasos
+            12641,45000, -- Wizard's Coat
+            13964,45000, -- Wizard's Gloves
+            14217,45000, -- Wizard's Tonban
+            14092,45000, -- Wizard's Sabots
         }
         xi.shop.general(player, stock);
     elseif(player:getMainJob() == xi.job.RUN) then -- RUN
@@ -330,6 +338,14 @@ commandObj.onTrigger = function(player)
             15007,45000,  --
             16314,45000,  --
             15751,45000,  --
+            -- AF1
+            11994,35000, -- Gallant Torque
+            17643,35000, -- War Hoop
+            12515,45000, -- Gallant Coronet
+            12644,45000, -- Gallant Surcoat
+            13967,45000, -- Gallant Gauntlets
+            14220,45000, -- Gallant Breeches
+            14095,45000, -- Gallant Leggings
         }
         xi.shop.general(player, stock);
 		return;

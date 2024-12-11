@@ -822,7 +822,8 @@ local uwej =
 xi.unitywanted.qmOnTrigger = function(player, npc, mob, target)
     local function player_level ()
      local level = player:getMainLvl()
-     local party = player:getParty()
+     --local party = player:getParty()
+     local party = player:getAlliance()
              for _, partyMember in pairs(party) do
                          local a, b = partyMember:getMainLvl(), 99
                     if a~=b then
@@ -833,7 +834,8 @@ xi.unitywanted.qmOnTrigger = function(player, npc, mob, target)
     end
 
     local function player_rank ()
-     local party = player:getParty()
+     --local party = player:getParty()
+     local party = player:getAlliance()
              for _, partyMember in pairs(party) do
                          local a, b = partyMember:getRank(partyMember:getNation()), 10
                     if a~=b then
@@ -843,7 +845,8 @@ xi.unitywanted.qmOnTrigger = function(player, npc, mob, target)
                     return false
     end
     local function player_vwnm ()
-     local party = player:getParty()
+     --local party = player:getParty()
+     local party = player:getAlliance()
              for _, partyMember in pairs(party) do
                          local a, b = partyMember:getCharVar('[VWNM]TKills'), 66
                     if a~=b then

@@ -24,8 +24,8 @@ local content = Limbus:new({
     allowTrusts      = true,
 })
 
-function content:onBattlefieldInitialise(battlefield)
-    Limbus.onBattlefieldInitialise(self, battlefield)
+function content:onBattlefieldInitialize(battlefield)
+    Limbus.onBattlefieldInitialize(self, battlefield)
 
     for i, crateID in ipairs(ID.NE_APOLLYON.npc.TIME_CRATES) do
         npcUtil.showCrate(GetNPCByID(crateID))

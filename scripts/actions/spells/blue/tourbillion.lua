@@ -25,17 +25,18 @@ end
 spellObject.onSpellCast = function(caster, target, spell)
     local params = {}
     params.ecosystem = xi.ecosystem.BEAST
+    params.tpmod = xi.spells.blue.tpMod.DAMAGE
     params.attackType = xi.attackType.PHYSICAL
     params.damageType = xi.damageType.BLUNT
     params.attribute = xi.mod.INT
-    params.skillType = xi.skillType.BLUE_MAGIC_SKILL
+    params.skillType = xi.skill.BLUE_MAGIC
     params.scattr = xi.skillchainType.LIGHT
     params.scattr2 = xi.skillchainType.FRAGMENTATION
     params.numhits = 1
-    params.multiplier = 2.0
-    params.tp150 = 2.0
+    params.multiplier = 4.0
+    params.tp150 = 1.0
     params.tp300 = 2.0
-    params.duppercap = 99
+    params.duppercap = 69
     params.str_wsc = 0.25
     params.dex_wsc = 0.0
     params.vit_wsc = 0.0
@@ -43,10 +44,10 @@ spellObject.onSpellCast = function(caster, target, spell)
     params.int_wsc = 0.0
     params.mnd_wsc = 0.25
     params.chr_wsc = 0.0
-    params.addedEffect = xi.effect.WEAKEN_DEFENSE
+    params.effect = xi.effect.DEFENSE_DOWN
     local power = 10
-    local tick = 10
-    local duration = 120
+    local tick = 0
+    local duration = 60
     local fTP = caster:getTP()
     local resistThreshold = 0
     if fTP >= 2000 then 
@@ -56,7 +57,7 @@ spellObject.onSpellCast = function(caster, target, spell)
         resistThreshold = 0.5
         end
     local damage = xi.spells.blue.usePhysicalSpell(caster, target, spell, params)
-    xi.spells.blue.usePhysicalSpellAddedEffect(caster, target, spell, params, power, tick, duration)
+    xi.spells.blue.usePhysicalSpellAddedEffect(caster, target, spell, params, damage, power, tick, duration)
 
     return damage
 end

@@ -20,17 +20,29 @@ spellObject.onMagicCastingCheck = function(caster, target, spell)
     end
 end
 spellObject.onSpellCast = function(caster, target, spell)
-    local duration = xi.spells.blue.calculateDurationWithDiffusion(caster, 90)
+    local blueSkill = utils.clamp(caster:getSkillLevel(xi.skill.BLUE_MAGIC), 0, 500)
+    local duration = xi.spells.blue.calculateDurationWithDiffusion(caster, 300)
+
     local returnEffect = xi.effect.DEFENSE_BOOST
-    local returnEffect = xi.effect.HASTE
-    local returnEffect = xi.effect.REGEN
-    local returnEffect = xi.effect.MAGIC_DEFENSE_BOOST
 
-    local actionOne = target:addStatusEffect(xi.effect.DEFENSE_BOOST, 10, 0, duration)
-    local actionTwo = target:addStatusEffect(xi.effect.HASTE, 10, 0, duration)
-    local actionThree = target:addStatusEffect(xi.effect.REGEN, 10, 0, duration)
-    local actionFour = target:addStatusEffect(xi.effect.MAGIC_DEFENSE_BOOST, 10, 0, duration)
 
-    return typeEffect
+    local actionOne   = caster:addStatusEffect(xi.effect.DEFENSE_BOOST, 25, 3, duration, false)
+    local actionTwo   = caster:addStatusEffect(xi.effect.HASTE, 15, 3, duration, false)
+    local actionThree = caster:addStatusEffect(xi.effect.REGEN, 30, 3, duration, false)
+    local actionFour  = caster:addStatusEffect(xi.effect.MAGIC_DEF_BOOST, 15, 3, duration, false)
+
+    if not actionOne and not actionTwo and not actionThree and not actionFour then -- all statuses fail to apply
+        spell:setMsg(xi.msg.basic.MAGIC_NO_EFFECT)
+    elseif not actionOne and actionTwo and actionThree and actionFour then -- the first status fails to apply
+        returnEffect = xi.effect.DEFENSE_BOOST
+    elseif actionOne and actionThree and actionFour and not actionTwo then -- the second status fails to apply
+        returnEffect = xi.effect.HASTE
+    elseif actionOne and actionTwo and actionFour and not actionThree then -- the third status fails to apply
+        returnEffect = xi.effect.REGEN
+    elseif actionOne and actionTwo and actionThree and not actionFour then -- the third status fails to apply
+        returnEffect = xi.effect.MAGIC_DEF_BOOST
+    end
+
+    return returnEffect
 end
 return spellObject

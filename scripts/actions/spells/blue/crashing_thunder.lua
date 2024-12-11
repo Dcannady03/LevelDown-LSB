@@ -18,15 +18,16 @@ spellObject.onMagicCastingCheck = function(caster, target, spell)
     else
         return spell:setMsg(xi.msg.basic.STATUS_PREVENTS)
     end
+end
 spellObject.onSpellCast = function(caster, target, spell)
     local params = {}
     params.ecosystem = xi.ecosystem.BIRDS
     params.attackType = xi.damageType.MAGICAL
     params.damageType = xi.damageType.THUNDER
     params.attribute = xi.mod.INT
-    params.multiplier = 6.5
+    params.multiplier = 1.0
     params.tMultiplier = 1.5
-    params.duppercap = 99
+    params.duppercap = 75
     params.str_wsc = 0.0
     params.dex_wsc = 0.0
     params.vit_wsc = 0.0
@@ -35,11 +36,7 @@ spellObject.onSpellCast = function(caster, target, spell)
     params.mnd_wsc = 0.0
     params.chr_wsc = 0.0
 
-end
-    local damage = xi.spells.blue.useMagicalSpell(caster, target, spell, params)
-    xi.spells.blue.useMagicalSpellAddedEffect(caster, target, spell, params, power, tick, duration)
-
-    return damage
+    return xi.spells.blue.useMagicalSpell(caster, target, spell, params)
 end
 
 return spellObject

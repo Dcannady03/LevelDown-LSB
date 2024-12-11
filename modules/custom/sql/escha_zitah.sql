@@ -252,19 +252,19 @@ INSERT INTO mob_skill_lists VALUES ('Shockmaw', 50001, 2875); -- water spout
 INSERT INTO mob_skill_lists VALUES ('Shockmaw', 50001, 2872); -- depth charge
 INSERT INTO mob_skill_lists VALUES ('Shockmaw', 50001, 2873); -- blowhole blast
 INSERT INTO mob_skill_lists VALUES ('Shockmaw', 50001, 2874); -- angry seas
-INSERT INTO mob_spell_lists VALUES ('Shockmaw', 512, 501, 65, 255); -- waterja
-INSERT INTO mob_spell_lists VALUES ('Shockmaw', 512, 173, 65, 255); -- water v
-INSERT INTO mob_spell_lists VALUES ('Shockmaw', 512, 854, 65, 255); -- water vi
-INSERT INTO mob_spell_lists VALUES ('Shockmaw', 512, 215, 65, 255); -- flood 2
-INSERT INTO mob_spell_lists VALUES ('Shockmaw', 512, 500, 65, 255); -- thunderja
-INSERT INTO mob_spell_lists VALUES ('Shockmaw', 512, 168, 65, 255); -- thunder v
-INSERT INTO mob_spell_lists VALUES ('Shockmaw', 512, 853, 65, 255); -- thunder vi
-INSERT INTO mob_spell_lists VALUES ('Shockmaw', 512, 213, 65, 255); -- burst 2
-INSERT INTO mob_spell_lists VALUES ('Shockmaw', 512,  46, 65, 255); -- protect iv
-INSERT INTO mob_spell_lists VALUES ('Shockmaw', 512,  47, 65, 255); -- protect v
-INSERT INTO mob_spell_lists VALUES ('Shockmaw', 512,  51, 65, 255); -- shell iv
-INSERT INTO mob_spell_lists VALUES ('Shockmaw', 512,  52, 65, 255); -- shell v
-UPDATE mob_pools SET sJob = 4, skill_list_id = 50001, spellList = 512 WHERE poolid = 5721 AND name = 'Shockmaw';
+INSERT INTO mob_spell_lists VALUES ('Shockmaw', 524, 501, 65, 255); -- waterja
+INSERT INTO mob_spell_lists VALUES ('Shockmaw', 524, 173, 65, 255); -- water v
+INSERT INTO mob_spell_lists VALUES ('Shockmaw', 524, 854, 65, 255); -- water vi
+INSERT INTO mob_spell_lists VALUES ('Shockmaw', 524, 215, 65, 255); -- flood 2
+INSERT INTO mob_spell_lists VALUES ('Shockmaw', 524, 500, 65, 255); -- thunderja
+INSERT INTO mob_spell_lists VALUES ('Shockmaw', 524, 168, 65, 255); -- thunder v
+INSERT INTO mob_spell_lists VALUES ('Shockmaw', 524, 853, 65, 255); -- thunder vi
+INSERT INTO mob_spell_lists VALUES ('Shockmaw', 524, 213, 65, 255); -- burst 2
+INSERT INTO mob_spell_lists VALUES ('Shockmaw', 524,  46, 65, 255); -- protect iv
+INSERT INTO mob_spell_lists VALUES ('Shockmaw', 524,  47, 65, 255); -- protect v
+INSERT INTO mob_spell_lists VALUES ('Shockmaw', 524,  51, 65, 255); -- shell iv
+INSERT INTO mob_spell_lists VALUES ('Shockmaw', 524,  52, 65, 255); -- shell v
+UPDATE mob_pools SET sJob = 4, skill_list_id = 50001, spellList = 524 WHERE poolid = 5721 AND name = 'Shockmaw';
 
 -- Fleet Stalker
 INSERT INTO mob_skill_lists VALUES ('Fleetstalker', 50000, 2924); -- divesting stampede
@@ -272,23 +272,23 @@ INSERT INTO mob_skill_lists VALUES ('Fleetstalker', 50000, 3506); -- hellfire ar
 INSERT INTO mob_skill_lists VALUES ('Fleetstalker', 50000, 2922); -- soulshattering roar
 INSERT INTO mob_skill_lists VALUES ('Fleetstalker', 50000, 3507); -- incensed pummel
 INSERT INTO mob_skill_lists VALUES ('Fleetstalker', 50000, 2926); -- beastruction
-INSERT INTO mob_spell_lists VALUES ('Fleetstalker', 513, 286, 65, 255); -- addle
-INSERT INTO mob_spell_lists VALUES ('Fleetstalker', 513, 365, 65, 255); -- breakga
-INSERT INTO mob_spell_lists VALUES ('Fleetstalker', 513, 359, 65, 255); -- silencega
-INSERT INTO mob_spell_lists VALUES ('Fleetstalker', 513, 357, 65, 255); -- slowga
-INSERT INTO mob_spell_lists VALUES ('Fleetstalker', 513, 366, 65, 255); -- graviga
-INSERT INTO mob_spell_lists VALUES ('Fleetstalker', 513, 360, 65, 255); -- dispelga
-INSERT INTO mob_spell_lists VALUES ('Fleetstalker', 513, 211, 65, 255); -- quake ii
-INSERT INTO mob_spell_lists VALUES ('Fleetstalker', 513, 191, 65, 255); -- stonaga III
-INSERT INTO mob_spell_lists VALUES ('Fleetstalker', 513, 192, 65, 255); -- stonaga IV
-INSERT INTO mob_spell_lists VALUES ('Fleetstalker', 513, 499, 65, 255); -- stoneja
-INSERT INTO mob_spell_lists VALUES ('Fleetstalker', 513, 205, 65, 255); -- flare ii
-INSERT INTO mob_spell_lists VALUES ('Fleetstalker', 513, 148, 65, 255); -- fire v
-INSERT INTO mob_spell_lists VALUES ('Fleetstalker', 513, 849, 65, 255); -- fire vi
-INSERT INTO mob_spell_lists VALUES ('Fleetstalker', 513, 176, 65, 255); -- firaga iii
-INSERT INTO mob_spell_lists VALUES ('Fleetstalker', 513, 177, 65, 255); -- firagaiv
-INSERT INTO mob_spell_lists VALUES ('Fleetstalker', 513, 496, 65, 255); -- firja
-UPDATE mob_pools SET mJob = 4, sJob = 5, skill_list_id = 50000, spellList = 513 WHERE poolid = 5720 AND name = 'Fleetstalker';
+INSERT INTO mob_spell_lists VALUES ('Fleetstalker', 525, 286, 65, 255); -- addle
+INSERT INTO mob_spell_lists VALUES ('Fleetstalker', 525, 365, 65, 255); -- breakga
+INSERT INTO mob_spell_lists VALUES ('Fleetstalker', 525, 359, 65, 255); -- silencega
+INSERT INTO mob_spell_lists VALUES ('Fleetstalker', 525, 357, 65, 255); -- slowga
+INSERT INTO mob_spell_lists VALUES ('Fleetstalker', 525, 366, 65, 255); -- graviga
+INSERT INTO mob_spell_lists VALUES ('Fleetstalker', 525, 360, 65, 255); -- dispelga
+INSERT INTO mob_spell_lists VALUES ('Fleetstalker', 525, 211, 65, 255); -- quake ii
+INSERT INTO mob_spell_lists VALUES ('Fleetstalker', 525, 191, 65, 255); -- stonaga III
+INSERT INTO mob_spell_lists VALUES ('Fleetstalker', 525, 192, 65, 255); -- stonaga IV
+INSERT INTO mob_spell_lists VALUES ('Fleetstalker', 525, 499, 65, 255); -- stoneja
+INSERT INTO mob_spell_lists VALUES ('Fleetstalker', 525, 205, 65, 255); -- flare ii
+INSERT INTO mob_spell_lists VALUES ('Fleetstalker', 525, 148, 65, 255); -- fire v
+INSERT INTO mob_spell_lists VALUES ('Fleetstalker', 525, 849, 65, 255); -- fire vi
+INSERT INTO mob_spell_lists VALUES ('Fleetstalker', 525, 176, 65, 255); -- firaga iii
+INSERT INTO mob_spell_lists VALUES ('Fleetstalker', 525, 177, 65, 255); -- firagaiv
+INSERT INTO mob_spell_lists VALUES ('Fleetstalker', 525, 496, 65, 255); -- firja
+UPDATE mob_pools SET mJob = 4, sJob = 5, skill_list_id = 50000, spellList = 525 WHERE poolid = 5720 AND name = 'Fleetstalker';
 
 -- Urmahlullu
 INSERT INTO mob_skill_lists VALUES ('Urmahlullu', 50002, 628); -- wild horn

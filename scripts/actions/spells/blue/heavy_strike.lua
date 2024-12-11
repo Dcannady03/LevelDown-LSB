@@ -27,7 +27,7 @@ spellObject.onSpellCast = function(caster, target, spell)
     params.scattr2 = xi.skillchainType.TRANSFIXION
     params.numhits = 1
     params.multiplier = 1.5
-    parmas.tp150 = 2.25
+    params.tp150 = 2.25
     params.tp300 = 3.5
     params.tp350 = 4.0
     params.azuretp = 1.5
@@ -40,7 +40,7 @@ spellObject.onSpellCast = function(caster, target, spell)
     params.mnd_wsc = 0.0
     params.chr_wsc = 0.0
 
-    return xi.spells.blu.usePhysicalSpell(caster, target, spell, params)
+    return xi.spells.blue.usePhysicalSpell(caster, target, spell, params)
 end
 
 return spellObject

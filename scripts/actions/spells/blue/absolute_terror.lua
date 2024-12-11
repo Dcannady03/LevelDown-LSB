@@ -28,16 +28,19 @@ spellObject.onSpellCast = function(caster, target, spell)
     params.effect = xi.effect.TERROR
     local power = 10
     local tick = 3
-    local duration = 15
+    local duration = 5
     local resistThreshold = 0.5
+    local resist = applyResistanceEffect(caster, target, spell, params)
     local isGaze = false
     local isConal = false
 
     if target:isNM() then
-         skill:setMsg(xi.msg.basic.SKILL_MISS)
-    else
-         return xi.spells.blue.useEnfeeblingSpell(caster, target, spell, params, power, tick, duration, resistThreshold, isGaze, isConal)
+       if resist >= resistThreshold then
+          resistThreshold = 0
+       end
     end
+
+         return xi.spells.blue.useEnfeeblingSpell(caster, target, spell, params, power, tick, duration, resistThreshold, isGaze, isConal)
 end
 
 return spellObject

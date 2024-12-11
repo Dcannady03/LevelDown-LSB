@@ -451,7 +451,7 @@ end
 
 local function convertQuantityMenu(player, page)
     local convertQtyMenu     = {1, 5, 10, 25, 50 ,75}
-    local convertitem        = {{'Tukuku Whiteshell','Whiteshell', '1449'}, {'Lungo-nango Jadeshell','Jadeshell', '1450'}, {'Rimilala Stripeshell','Stripeshell', '1451'}, {'Ordelle Bronzepiece','Bronzepiece', '1452'}, {'Montiont Silverpiece','Silverpiece', '1453'}, {'Ranperre Goldpiece','Goldpiece', '1454'}, {'One Byne Bill','Byne', '1455'}, {'One Hundred Byne Bill','HundredByne', '1456'}, {'Ten Thousand Byne Bill','TenkByne', '1457'}} 
+    local convertitem        = {{'Tukuku Whiteshell','Whiteshell', '1449'}, {'Lungo Jadeshell','Jadeshell', '1450'}, {'Rimilala Stripeshell','Stripeshell', '1451'}, {'Ordelle Bronzepiece','Bronzepiece', '1452'}, {'Montiont Silverpiece','Silverpiece', '1453'}, {'Ranperre Goldpiece','Goldpiece', '1454'}, {'One Byne Bill','Byne', '1455'}, {'One Hundred Byne','HundredByne', '1456'}, {'Ten Thousand Byne Bill','TenkByne', '1457'}} 
     local linesPerPage = 6
     page = page or 1
     local startIndex = (page - 1) * linesPerPage + 1
@@ -534,7 +534,7 @@ local function convertQuantityMenu(player, page)
     end
 
     delaySendMenu(player, {
-        title = 'How many do you want to Convert!',
+        title = 'How many to Convert!',
         options = options
     })
 
@@ -601,7 +601,7 @@ local function convertHunMainMenu(player, page)
                     end
                   end
                 end
-                if string.find(convertHun, 'Lungo-nango Jadeshell') then
+                if string.find(convertHun, 'Jadeshell') then
                       player:setLocalVar('Jadeshell',exchangeCurrency)
                       convertQuantityMenu(player, page)
                 elseif string.find(convertHun, 'Montiont Silverpiece') then

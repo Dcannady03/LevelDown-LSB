@@ -47,25 +47,29 @@ selecta =
     {
         'Medicine',
          function(player)
-            menu.options = xi.shop.general(player, medicine)
+            xi.shop.general(player, medicine)
+            return
          end
     },
     {
         'Ammunition Page1',
          function(player)
-            menu.options = xi.shop.general(player, ammunition)
+            xi.shop.general(player, ammunition)
+            return
          end
     },
     {
         'Ammunition Page2',
          function(player)
-            menu.options = xi.shop.general(player, ammunition)
+            xi.shop.general(player, ammunition)
+            return
          end
     },
     {
         'Ninjutsu Tools',
          function(player)
-            menu.options = xi.shop.general(player, ninjitsu)
+            xi.shop.general(player, ninjitsu)
+            return
          end
     },
     {
@@ -81,31 +85,36 @@ selectb =
     {
         'Food Page1',
          function(player)
-            menu.options = xi.shop.general(player, food)
+            xi.shop.general(player, food)
+            return
          end
     },
     {
         'Food Page2',
          function(player)
-            menu.options = xi.shop.general(player, fooda)
+            xi.shop.general(player, fooda)
+            return
          end
     },
     {
         'Scrolls',
          function(player)
-            menu.options = xi.shop.general(player, scrolls)
+            xi.shop.general(player, scrolls)
+            return
          end
     },
     {
         'Keys Page1',
          function(player)
-            menu.options = xi.shop.general(player, keys)
+            xi.shop.general(player, keys)
+            return
          end
     },
     {
         'Keys Page2',
          function(player)
-            menu.options = xi.shop.general(player, keysa)
+            xi.shop.general(player, keysa)
+            return
          end
     },
     {
@@ -128,19 +137,22 @@ selectc =
     {
         'Crystals',
          function(player)
-            menu.options = xi.shop.general(player, crystals)
+            xi.shop.general(player, crystals)
+            return
          end
     },
     {
         'Dyna Pops',
          function(player)
-            menu.options = xi.shop.general(player, dyna)
+            xi.shop.general(player, dyna)
+            return
          end
     },
     {
         'Corsair',
          function(player)
-            menu.options = xi.shop.general(player, corsair)
+            xi.shop.general(player, corsair)
+            return
          end
     },
     {
@@ -156,7 +168,7 @@ medicine =
             4112,     300,   -- Potion
             4116,     600,   -- Hi-Potion
             4120,    1200,   -- X-Potion
-            4128,     650,   -- Ether / Temporarily(?) removed by SE June 2021
+            --4128,     650,   -- Ether / Temporarily(?) removed by SE June 2021
             4132,    1300,   -- Hi-Ether
             4136,    3000,   -- Super Ether
             4145,   15000,   -- Elixir

@@ -13,7 +13,7 @@
 local spellObject = {}
 
 spellObject.onMagicCastingCheck = function(caster, target, spell)
-     if caster:hasStatusEffect(xi.effect.UNBRIDLEDLEARNING) or 
+     if caster:hasStatusEffect(xi.effect.UNBRIDLED_LEARNING) or 
      caster:hasStatusEffect(xi.effect.UNBRIDLED_WISDOM) then
 return 0
     else
@@ -26,24 +26,23 @@ spellObject.onSpellCast = function(caster, target, spell)
     params.ecosystem = xi.ecosystem.VERMIN
     params.attackType = xi.attackType.MAGICAL
     params.damageType = xi.damageType.WIND
-    params.multiplier = 1.36
-    params.duppercap = 99
+    params.skillType = xi.skill.BLUE_MAGIC
+    params.attribute = xi.mod.INT
+    params.multiplier = 0.36
+    params.tMultiplier = 1.0
+    params.duppercap = 75
     params.str_wsc = 0.0
     params.dex_wsc = 0.0
     params.vit_wsc = 0.0
     params.agi_wsc = 0.0
-    params.int_wsc = 0.0
+    params.int_wsc = 2.0
     params.mnd_wsc = 0.0
     params.chr_wsc = 0.0
 
-    params.addedEffect = xi.effect.DISPEL
-    local power = 5
-    local tick = 0
-
     local damage = xi.spells.blue.useMagicalSpell(caster, target, spell, params)
-    xi.spells.blue.useMagicalSpellAddedeffect(caster, target, spell, params, power, tick)
+    local dispel = target:dispelStatusEffect()
 
-    return damage
+    return damage, dispel
 end
 
 return spellObject

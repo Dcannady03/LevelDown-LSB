@@ -23,8 +23,9 @@ spellObject.onSpellCast = function(caster, target, spell)
     params.attackType = xi.attackType.MAGICAL
     params.damageType = xi.damageType.WATER
     params.attribute = xi.mod.MND
-    params.multiplier = 1.36
-    params.duppercap = 99
+    params.multiplier = 1
+    params.tMultiplier = 1.5
+    params.duppercap = 49
     params.str_wsc = 0.0
     params.dex_wsc = 0.0
     params.vit_wsc = 0.0
@@ -34,12 +35,12 @@ spellObject.onSpellCast = function(caster, target, spell)
     params.chr_wsc = 0.0
 
     params.addedEffect = xi.effect.ATTACK_DOWN
-    local power = 5
+    local power = 2
     local tick = 0
     local duration = 180
 
     local damage = xi.spells.blue.useMagicalSpell(caster, target, spell, params)
-    xi.spells.blue.useMagicalSpellAddedeffect(caster, target, spell, params, power, tick, duration)
+    xi.spells.blue.useMagicalSpellAddedEffect(caster, target, spell, params, power, tick, duration)
 
     return damage
 end

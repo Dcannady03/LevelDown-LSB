@@ -22,7 +22,7 @@ xi.server.onTimeServerTick = function()
                xi.mogTablet.startEvent()
             end
 ]]--
-xi.events.harvestFestival.Ullegore(player)
+
 end
 
 -- Message for use with SmallPacket0x04B

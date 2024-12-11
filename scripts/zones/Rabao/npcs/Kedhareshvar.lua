@@ -29,7 +29,7 @@ entity.onTrigger = function(player, npc)
                     end
                 end
             local nmHuntCost = math.floor(totalCount / 50) * 50000
-                   cost = cost - nmHuntCost
+                   cost = cost - nmHuntCost + 50000
             return cost
         end
                 local menu  = {}

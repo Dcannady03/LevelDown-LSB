@@ -44,6 +44,9 @@ INSERT INTO `synth_recipes` VALUES (80040, 0, 0, 100, 0, 0, 0, 0, 0, 0, 0, 4098,
 INSERT INTO `synth_recipes` VALUES (80041, 0, 0,  80, 0, 0, 0, 0, 0, 0, 0, 4098, 4240, 17545, 17547, 17549, 17551, 17553, 17555, 17557, 17559, 18632, 18632, 18632, 18632, 1, 1, 1, 1, 'iridal_staff');
 -- new items add 10_28_2024
 INSERT INTO `synth_recipes` VALUES (80042, 0, 0, 0, 0, 0, 0, 118, 0, 0, 0, 4099, 4241, 765, 8739, 9003, 0, 0, 0, 0, 0, 26333, 26334, 26334, 26334, 1, 1, 1, 1, 'ioskeha_belt ioskeha_belt_+1' );
+-- new items add 12_1_2024
+INSERT INTO `synth_recipes` VALUES (80043, 0, 0, 0, 0, 0, 120, 100, 0, 0, 0, 4099, 4241, 4078, 4082, 9253, 0, 0, 0, 0, 0, 26268, 26269, 0, 0, 1, 1, 1, 1, 'moonbeam_cape, moonlight_cape_+1' );
+INSERT INTO `synth_recipes` VALUES (80044, 0, 0, 0, 0, 100, 0, 0, 120, 0, 0, 4098, 4240, 4081, 4082, 9255, 0, 0, 0, 0, 0, 26189, 26190, 0, 0, 1, 1, 1, 1, 'moonbeam_ring, moonlight_ring_+1' );
 
 
 
