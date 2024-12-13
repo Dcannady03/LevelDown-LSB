@@ -11,7 +11,7 @@ local event = SeasonalEvent:new('StarlightCelebration')
 
 xi.events.starlightCelebration.enabledCheck = function()
     local month = tonumber(os.date('%m'))
-    return month == 12
+    return month == 1
 end
 
 event:setEnableCheck(xi.events.starlightCelebration.enabledCheck)
